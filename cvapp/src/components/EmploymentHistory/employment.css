@@ -1,0 +1,55 @@
+.EmploymentWraper{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(106, 105, 105);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.Emplomenthistory{
+    margin-top: 20px;
+    
+}
+.Emplomentitemscontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.Emplomentitems{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px ;
+    
+}
+.commentitem{
+    grid-column: span 2;    
+}
+
+#Ecomments{
+    height: 100px;
+    padding: 5px;
+}
+.EmploymentList{
+    padding-left: 15px;
+    margin-top: 2px;
+    font-size: 1.1em;
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #CEDEBD;
+}
+.EmploymentList:hover{
+    background-color: #cfe6b6;
+}
+.addempoymentbtn{
+    font-size: 1.2rem;
+    font-weight: bold;
+   height: 40px;
+   width: 100px;
+   border: none;
+   border-radius: 8px;
+   margin-top: 20px;
+   background-color: #9EB384; 
+}

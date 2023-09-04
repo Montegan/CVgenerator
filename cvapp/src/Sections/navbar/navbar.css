@@ -1,0 +1,26 @@
+.Navbarcontainer{
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  height: 50px;
+  padding: 20px;
+  background-color: #CEDEBD;
+  position: sticky;
+  top:0px;
+}
+
+.logo{
+    font-size: 3.5em;
+    font-family: 'Black Ops One', cursive,sans-serif;
+}
+.generateBtn{
+   font-size: 1.3rem;
+   font-weight: bold;
+   padding: 2px;
+   height: 50px;
+   width: 200px;
+   border: none;
+   border-radius: 8px;
+   background-color:aliceblue;
+}
+

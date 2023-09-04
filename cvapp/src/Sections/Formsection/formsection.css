@@ -1,0 +1,43 @@
+
+.formsectionContainer{
+    background-color: #FAF1E4;
+    width: 43vw;
+    height: 85vh;
+    margin-left: 5px;
+    padding: 0px 10px 20px 5px;
+    border-radius: 10PX; 
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    
+}
+.formsectionContainer::-webkit-scrollbar{
+    display: block;
+    width: 5px;
+    
+}
+.formsectionContainer::-webkit-scrollbar-track{
+    
+    background-color: transparent;
+}
+.formsectionContainer::-webkit-scrollbar-thumb{
+    background-color: rgba(114, 236, 89, 0.608);
+    border-radius: 10px;
+    
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+}
+.formSubmitbtn{
+  font-size: 1.2rem;
+  font-weight: bold;
+   height: 45px;
+   width: 200px;
+   align-self:center;
+   border: none;
+   border-radius: 8px;
+   margin-top: 20px;
+   margin-left: 10px;
+   background-color:#CEDEBD;
+}

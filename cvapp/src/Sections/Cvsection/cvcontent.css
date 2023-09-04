@@ -1,0 +1,36 @@
+.cvcontainer{
+   width: 55vw;
+   height: 86vh;
+   overflow-y: scroll;
+   overflow-x:hidden ;
+   display: flex;
+
+}
+
+.expriencecatagory{
+   background-color:#7C99AC;
+   padding: 20px;
+   flex: 4;
+}
+.contactscatagory{
+   background-color: #D3DEDC;
+   padding: 20px;
+   flex: 2;
+}
+.cvcontainer::-webkit-scrollbar{
+   display: block;
+   width: 5px;
+   
+}
+.cvcontainer::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+.cvcontainer::-webkit-scrollbar-thumb{
+   background-color: rgba(114, 236, 89, 0.608);
+   border-radius: 10px;
+}
+.profilepicture{
+   height:200px; 
+   width:200px;
+   object-fit: cover;
+}
