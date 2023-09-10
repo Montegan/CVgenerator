@@ -1,0 +1,43 @@
+.skillsconatiner{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(106, 105, 105);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#skillabel{
+    padding-left: 15px;
+    margin-top: 2px;
+    font-size: 1.1em;
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #CEDEBD;
+}
+#languagelabel{
+    padding-left: 15px;
+    margin-top: 2px;
+    font-size: 1.1em;
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #CEDEBD;
+}
+
+.Skillsheader{
+    margin-top: 20px;
+   
+}
+.skillItems{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.skillItems> label{
+    font-size: 20px;
+    font-weight: bold;
+}

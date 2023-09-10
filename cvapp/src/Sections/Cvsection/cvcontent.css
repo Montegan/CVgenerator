@@ -1,21 +1,41 @@
 .cvcontainer{
    width: 55vw;
-   height: 86vh;
+   height: 100%;
    overflow-y: scroll;
    overflow-x:hidden ;
    display: flex;
 
 }
+.FirstLastnameHeader{
+   font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+   font-size: 50px;
+}
 
+.professionHeader{
+   font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+   font-size: 30px;
+}
+
+.userDescription{
+   margin-top: 20px;
+}
 .expriencecatagory{
    background-color:#7C99AC;
    padding: 20px;
    flex: 4;
 }
+
+.ExprienceContainer{
+   margin-top: 50px;
+}
 .contactscatagory{
    background-color: #D3DEDC;
    padding: 20px;
    flex: 2;
+}
+
+.contactDetails{
+   margin-top:20px;
 }
 .cvcontainer::-webkit-scrollbar{
    display: block;
@@ -33,4 +53,42 @@
    height:200px; 
    width:200px;
    object-fit: cover;
+}
+
+.EducationContainer{
+   margin-top: 40px;
+   display: flex;
+   flex-direction: column;
+}
+.EducationDetailswraper{
+   margin-top: 20px;
+   font-size: 15px;
+   font-family: Tahoma, sans-serif;
+   list-style:none;
+}
+.educationdetails{
+   margin-top: 5px;
+}
+
+.SkillContainer{
+   margin-top: 40px;
+}
+.languageContainer{
+   margin-top: 40px;
+}
+
+.recomendationContainer{
+   margin-top: 40px;
+}
+.recomendationTiles{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   
+}
+.recomendationWraper{
+   display: flex;
+   flex-direction: column;
+   margin-right:15px;
+   margin-top: 20px;
+   flex-wrap: wrap;
 }

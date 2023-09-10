@@ -15,6 +15,10 @@ function GeneralInfo({userinput,setUserinput}){
           <input id= "lastname" className=" inputDesgn" type="text" value= {userinput.LastName} onChange={(e)=>{setUserinput({...userinput, LastName:e.target.value})}} required  />
           </div>
           <div className='inputcontainer'>
+          <label htmlFor="lastname">Profession</label>
+          <input id= "lastname" className=" inputDesgn" type="text" value= {userinput.profession} onChange={(e)=>{setUserinput({...userinput, profession:e.target.value})}} required  />
+          </div>
+          <div className='inputcontainer'>
           <label htmlFor="userEmail">Email</label>
           <input id= "userEmail" className=" inputDesgn" type="email" value= {userinput.Email} onChange={(e)=>{setUserinput({...userinput, Email:e.target.value})}} required  />
           </div>

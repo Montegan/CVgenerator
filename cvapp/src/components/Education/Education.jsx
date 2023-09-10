@@ -1,8 +1,15 @@
 
 import React from "react";
 import './education.css';
-function Education({userEducation,setUserEducation}) {
+function Education({educationcontainer,seteducationcontainer,userEducation,setUserEducation}) {
     
+   const addEdu=()=>{
+    if(userEducation.Schoolname !== "" && userEducation.titleofstudy !== ""){
+  seteducationcontainer([...educationcontainer,userEducation]); 
+  setUserEducation({...userEducation, Schoolname:"" , titleofstudy:"",dateofstudyfrom:"",dateofstudyto:"",comments:""}) 
+    }
+   }
+
   return (
     <div className="educationwrapper">
     <h1 className="Education">Education</h1>
@@ -11,22 +18,22 @@ function Education({userEducation,setUserEducation}) {
 
     <div className='Educationitem'>
     <label htmlFor="educationList">School Name</label>
-    <input className= "educationList"  type="text"  value={userEducation.Schoolname} onChange={(e)=>{setUserEducation({...userEducation, Schoolname:e.target.value}) }} required  />
+    <input className= "educationList"  type="text"  value={userEducation.Schoolname} onChange={(e)=>{setUserEducation({...userEducation, Schoolname:e.target.value}) }}   />
     </div>
 
     <div className='Educationitem'>
     <label htmlFor="titleofstudy">Title of study</label>
-     <input id="titleofstudy" className= "educationList"  type="text" value={userEducation.titleofstudy} onChange={(e)=>{setUserEducation({...userEducation, titleofstudy:e.target.value}) }}  required  />
+     <input id="titleofstudy" className= "educationList"  type="text" value={userEducation.titleofstudy} onChange={(e)=>{setUserEducation({...userEducation, titleofstudy:e.target.value}) }}    />
      </div>
 
      <div className='Educationitem'>   
     <label htmlFor="dateofstudyfrom">From</label>
-    <input id="dateofstudyfrom" className= "educationList"  type="date" value={userEducation.dateofstudyfrom} onChange={(e)=>{setUserEducation({...userEducation, dateofstudyfrom:e.target.value}) }}   required  />
+    <input id="dateofstudyfrom" className= "educationList"  type="date" value={userEducation.dateofstudyfrom} onChange={(e)=>{setUserEducation({...userEducation, dateofstudyfrom:e.target.value}) }}    />
     </div> 
 
     <div className='Educationitem'>
     <label htmlFor="dateofstudyto">To</label>
-    <input id="dateofstudyto" className= "educationList"  type="date" value={userEducation.dateofstudyto} onChange={(e)=>{setUserEducation({...userEducation, dateofstudyto:e.target.value}) }}   required  />
+    <input id="dateofstudyto" className= "educationList"  type="date" value={userEducation.dateofstudyto} onChange={(e)=>{setUserEducation({...userEducation, dateofstudyto:e.target.value}) }} />
     </div>
 
     <div className='Educationitem eduCommentItem'>
@@ -35,7 +42,7 @@ function Education({userEducation,setUserEducation}) {
     </div>
     </div>
 
-    <button type="button" className="addeducationbtn" onClick={()=>{setUserEducation(userEducation) } }>Add</button>
+    <button type="button" className="addeducationbtn" onClick={addEdu}>Add</button>
     </div>
   )
 }

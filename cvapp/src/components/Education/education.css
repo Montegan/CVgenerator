@@ -19,8 +19,12 @@
 .Educationitem{
     display: flex;
     flex-direction: column;
-    margin-top:20px ;
-   
+    margin-top:20px ; 
+}
+
+.Educationitem> label{
+    font-size: 15px;
+    font-weight: bold;
 }
 .eduCommentItem{
     grid-column: span 2;    

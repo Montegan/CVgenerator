@@ -1,7 +1,83 @@
 import './cvcontent.css';
-function Cvcontent({userinput,userEducation,UserEmployment}){
+import { forwardRef } from 'react';
+function Cvcontent({Referncelist,skillsholder,skillLanguage,userinput,workcontainer,userEducation,UserEmployment,educationcontainer},ref){
+
+  const educations= educationcontainer.map((items)=>{ 
+    return(
+      <ul>
+    <li className='EducationDetailswraper'>    
+    <span> {items.dateofstudyfrom}</span> / <span> {items.dateofstudyto}</span>
+    <p className='educationdetails' style={{fontSize:"16px"}}> <strong> {items.titleofstudy} </strong></p>
+    <p className='educationdetails'> {items.Schoolname}</p>
+    <p className='educationdetails'> {items.comments}</p>
+  </li> 
+  </ul>
+  )
+  })
+
+  const work= workcontainer.map((items)=>{ return(
+    <ul>
+    <li key={items.CompanyName + items.workingField} className="exprincewrapper">
+          <div>
+           <span>From:{items.Durationfrom}</span> - <span>To:{items.Durationto}</span>
+          </div>
+          <div>
+          <span> {items.CompanyName}</span>
+        </div> 
+        <div>
+          <span> {items.workingField}</span>
+        </div>  
+        
+        <div>
+          <p> {items.comments}</p>
+        </div>  
+        </li>
+        </ul>
+     )
+  })
+
+  const skills = skillsholder.map((content)=>{
+    return(
+    <div key={content.Skill + content.langauge} className="exprincewrapper">
+          {content.Skill !== "" ?  <ul>
+          <li> {content.Skill}</li>
+          </ul>: null} 
+        </div>)
+  })
+
+  const Language = skillsholder.map((content)=>{
+    return(
+    <div key={content.Skill + content.langauge} className="exprincewrapper">
+         {content.langauge !=="" ?
+        <ul>
+          <li> {content.langauge}</li>
+          </ul>: null  }
+        </div>)
+  })
+
+  const Recomendtaions = Referncelist.map((references)=>{
+    return(
+      <div className='recomendationWraper'>
+      <div className='recomendationDetails'>
+          <p>{references.Fullname}</p>
+        </div>
+      <div className='recomendationDetails'>
+          <p>{references.Company}</p>
+        </div>
+        <div className='recomendationDetails'>
+          <p>{references.Jobposition}</p>
+        </div>
+        <div className='recomendationDetails'>
+          <p>{references.Email}</p>
+        </div>
+        <div className='recomendationDetails'>
+          <p>{references.Phone}</p>
+        </div>
+      </div>)
+  })
+  
     return( 
-       <div className="cvcontainer">
+       <div ref={ref} className="cvcontainer">
 
        <div className="contactscatagory">
         
@@ -10,17 +86,18 @@ function Cvcontent({userinput,userEducation,UserEmployment}){
         </div>
 
        <div className='ContactContainer'>
-        <h1>Contact</h1>
-          <div>
-            <h3>Phone</h3>
+        <h1>Contact Info</h1>
+        <hr/>
+          <div className='contactDetails'>
+            <h3>Phone : </h3>
             <p>{userinput.Phone}</p>
           </div>
-          <div>
-            <h3>Email</h3>
+          <div className='contactDetails'>
+            <h3>Email : </h3>
             <p>{userinput.Email}</p>
           </div>
-          <div>
-            <h3>Address</h3>
+          <div className='contactDetails'>
+            <h3>Address : </h3>
             <p>{userinput.Address}</p>
           </div>
         </div>
@@ -28,48 +105,50 @@ function Cvcontent({userinput,userEducation,UserEmployment}){
 
         <div className='EducationContainer'>
         <h1>Education</h1>
-        <div>
-          <span>From:{userEducation.dateofstudyfrom}</span> - <span>To:{userEducation.dateofstudyto}</span>
+        <hr/>
+          {educations}
         </div>
-        <div>
-          <span>{userEducation.titleofstudy}</span>
-        </div> 
-        <div>
-          <span> {userEducation.Schoolname}</span>
-        </div>   
+        
+        <div className="SkillContainer">
+        <h1>Skills</h1>
+        <hr/>
+          {skills}
         </div>
+         
+         <div className="languageContainer">
+         <h1>Languages</h1>
+         <hr/>
+         {Language}
+         </div>
+
        </div>
 
        <div className="expriencecatagory">
 
-       <div className='Userdescription'>
-       {userinput.Firstname}
-       {UserEmployment.workingField}
-       <p>A versatile and results-driven professional with a strong foundation in {UserEmployment.workingField}.
-        Leveraging a [number] year track record of excellence,
-         I am eager to contribute my expertise and passion for
-         {UserEmployment.CompanyName} to drive success in any role. My adaptable approach, problem-solving mindset, 
+       <section className='Userdescription'>
+       <h1 className='FirstLastnameHeader'> {userinput.Firstname}  {userinput.LastName}</h1>
+       <h2 className='professionHeader'> {userinput.profession}</h2>
+       {userinput.profession && <p className="userDescription">A versatile and results-driven professional with a strong foundation in {userinput.profession} .
+        Leveraging several years track record of excellence,
+         I am eager to contribute my expertise and passion to drive success in any role. My adaptable approach, problem-solving mindset, 
        and commitment to continuous improvement make me an asset in dynamic and challenging environments. </p>
-       </div>
+       }
+       </section>
          
 
        <div className='ExprienceContainer'>
         <h1>Experience</h1>
-          <div>
-           <span>From:{UserEmployment.Durationfrom}</span> - <span>To:{UserEmployment.Durationto}</span>
-          </div>
-          <div>
-          <span> {UserEmployment.CompanyName}</span>
-        </div> 
-        <div>
-          <span> {UserEmployment.workingField}</span>
-        </div>  
-        
-        <div>
-          <p> {UserEmployment.comments}</p>
-        </div>  
-        </div>
+        <hr/>
+        {work}
+       </div>
 
+       <div className="recomendationContainer">
+        <h1>Recomendations</h1>
+        <hr/>
+        <div className='recomendationTiles'>
+        {Recomendtaions}
+        </div>
+       </div>
 
        </div>
 
@@ -81,7 +160,8 @@ function Cvcontent({userinput,userEducation,UserEmployment}){
     )
 }
 
-export default Cvcontent;
+const ForwardedCv= forwardRef(Cvcontent);
+export default ForwardedCv;
 
 
 //         {userinput.LastName} 

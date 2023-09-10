@@ -1,6 +1,6 @@
 import React from 'react'
 import './navbar.css'
-function Navbar() {
+function Navbar({handlePrint}) {
   return (
     <div className='Navbarcontainer'>
     <div>
@@ -9,6 +9,8 @@ function Navbar() {
 
      <div>
         <button className='generateBtn'>Generate sample</button>
+        <button onClick={handlePrint} className='generateBtn'>Print Resume</button>
+
      </div>
     </div>
   )
