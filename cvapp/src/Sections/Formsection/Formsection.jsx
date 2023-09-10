@@ -12,6 +12,7 @@ function Formsection({handlePrint,Referncelist,setReferncelist,Refernceinput,set
     }
     return(
     <div className="formsectionContainer">
+
      <form onSubmit={submithandle} className="formContainer">
      <GeneralInfo userinput={userinput} setUserinput={setUserinput}/>
      <Education educationcontainer={educationcontainer} seteducationcontainer={seteducationcontainer} userEducation={userEducation} setUserEducation={setUserEducation}/>
@@ -20,6 +21,7 @@ function Formsection({handlePrint,Referncelist,setReferncelist,Refernceinput,set
      <Reference Referncelist={Referncelist} setReferncelist={setReferncelist} Refernceinput={Refernceinput} setRefernceinput={setRefernceinput}/>
      <button className ="formSubmitbtn"  type='submit'>Print Resume</button>
      </form>
+     
     </div>
 )
 }

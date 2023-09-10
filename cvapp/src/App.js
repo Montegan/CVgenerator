@@ -30,7 +30,7 @@ function App() {
    
     return (
       <div className="App">
-      <Navbar handlePrint={handlePrint}/>
+      <Navbar userinput={userinput} handlePrint={handlePrint}/>
     <div className="Contentarea">
       <Formsection handlePrint={handlePrint} skillsholder={skillsholder} setSkillsholder={setSkillsholder} 
       Refernceinput={Refernceinput} setRefernceinput={setRefernceinput}
@@ -41,7 +41,8 @@ function App() {
         seteducationcontainer={seteducationcontainer} setUserinput={setUserinput}
          UserEmployment={UserEmployment} setUserEmployment={setUserEmployment} 
          userEducation={userEducation} setUserEducation={setUserEducation}/>
-      <Cvcontent ref={selecteditem} Referncelist={Referncelist} skillsholder={skillsholder} skillLanguage={skillLanguage} userinput={userinput} 
+      <Cvcontent ref={selecteditem} Referncelist={Referncelist} skillsholder={skillsholder}
+       skillLanguage={skillLanguage} userinput={userinput} 
       workcontainer={workcontainer} educationcontainer={educationcontainer} 
       userEducation={userEducation} UserEmployment={UserEmployment} />
      

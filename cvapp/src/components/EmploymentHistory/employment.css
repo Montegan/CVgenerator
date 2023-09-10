@@ -56,3 +56,8 @@
    margin-top: 20px;
    background-color: #9EB384; 
 }
+
+.addempoymentbtn:hover{
+    cursor: pointer;
+    background-color: #6e8f46; 
+}

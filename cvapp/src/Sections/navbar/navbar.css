@@ -4,7 +4,7 @@
   align-items: center;
   height: 50px;
   padding: 20px;
-  background-color: #CEDEBD;
+  background-color: #a3e161;
   position: sticky;
   top:0px;
 }
@@ -23,5 +23,10 @@
    border: none;
    border-radius: 8px;
    background-color:aliceblue;
+}
+
+.generateBtn:hover{ 
+  cursor: pointer;
+  background-color: rgb(104, 220, 21);
 }
 

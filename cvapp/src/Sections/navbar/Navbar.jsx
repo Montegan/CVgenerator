@@ -1,6 +1,6 @@
 import React from 'react'
 import './navbar.css'
-function Navbar({handlePrint}) {
+function Navbar({handlePrint,userinput}) {
   return (
     <div className='Navbarcontainer'>
     <div>
@@ -8,8 +8,7 @@ function Navbar({handlePrint}) {
      </div>
 
      <div>
-        <button className='generateBtn'>Generate sample</button>
-        <button onClick={handlePrint} className='generateBtn'>Print Resume</button>
+        <button onClick={userinput.Firstname !== "" && userinput.LastName !== "" ? handlePrint : null} className='generateBtn'>Print Resume</button>
 
      </div>
     </div>

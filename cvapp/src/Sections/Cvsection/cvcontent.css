@@ -1,10 +1,20 @@
-.cvcontainer{
+.cvcontainerScroll{
+   margin-top: 5px;
+   margin-right: 10px;
    width: 55vw;
-   height: 100%;
+   height: 85vh;
    overflow-y: scroll;
-   overflow-x:hidden ;
-   display: flex;
+   overflow-x: hidden;
+}
 
+.cvcontainerScroll::-webkit-scrollbar{
+   display:none;
+   width: 5px;
+   
+}
+
+.cvcontainer{
+   display: flex;
 }
 .FirstLastnameHeader{
    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
@@ -27,6 +37,9 @@
 
 .ExprienceContainer{
    margin-top: 50px;
+}
+.exprincewrapper{
+   margin-top: 20px;
 }
 .contactscatagory{
    background-color: #D3DEDC;

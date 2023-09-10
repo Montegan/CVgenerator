@@ -2,7 +2,7 @@
 .formsectionContainer{
     background-color: #f8f2ea;
     width: 43vw;
-    height: 85vh;
+    height: 84vh;
     margin-left: 5px;
     padding: 0px 10px 20px 5px;
     border-radius: 10PX; 
@@ -11,7 +11,7 @@
     
 }
 .formsectionContainer::-webkit-scrollbar{
-    display: block;
+    display:none;
     width: 5px;
     
 }
@@ -40,4 +40,9 @@
    margin-top: 20px;
    margin-left: 10px;
    background-color:#CEDEBD;
+}
+
+.formSubmitbtn:hover{
+    cursor: pointer;
+    background-color: #31ca34;
 }

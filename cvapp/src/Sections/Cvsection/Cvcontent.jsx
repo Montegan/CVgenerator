@@ -77,8 +77,8 @@ function Cvcontent({Referncelist,skillsholder,skillLanguage,userinput,workcontai
   })
   
     return( 
-       <div ref={ref} className="cvcontainer">
-
+       <div ref={ref} className="cvcontainerScroll">
+       <div className="cvcontainer">
        <div className="contactscatagory">
         
         <div className='profilepiccontainer'>
@@ -155,7 +155,7 @@ function Cvcontent({Referncelist,skillsholder,skillLanguage,userinput,workcontai
       
         
             
-       
+       </div>
             </div>
     )
 }
