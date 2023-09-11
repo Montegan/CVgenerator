@@ -1,7 +1,8 @@
 
 .formsectionContainer{
-    background-color: #f8f2ea;
-    width: 43vw;
+    background-color: #EAEAEA;
+    color: #EAEAEA;
+    width: 42.5vw;
     height: 84vh;
     margin-left: 5px;
     padding: 0px 10px 20px 5px;
@@ -39,10 +40,10 @@
    border-radius: 8px;
    margin-top: 20px;
    margin-left: 10px;
-   background-color:#CEDEBD;
+   background-color:#168f18;
 }
 
 .formSubmitbtn:hover{
     cursor: pointer;
-    background-color: #31ca34;
+    background-color: #00f508;
 }

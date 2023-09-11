@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Work Sans', sans-serif;
 }
 .App{
     display: flex;
@@ -9,5 +10,5 @@
 .Contentarea{
     display: flex;
     justify-content: space-between;
-    background-color:#FAF1E4 ;
+    background-color:#EAEAEA;
 }

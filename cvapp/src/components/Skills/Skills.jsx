@@ -23,7 +23,7 @@ function Skills({skillsholder,setSkillsholder,skillLanguage,setSkilllanguage}) {
       <input id= "languagelabel"  type="text"  value={skillLanguage.langauge} onChange={(e)=>{setSkilllanguage({...skillLanguage, langauge:e.target.value}) }}  />
       </div>
       
-      <button type="button" className= "addempoymentbtn" onClick={skilLanguageadd}>Add</button>
+      <button type="button" className= "addskillsbtn" onClick={skilLanguageadd}>Add</button>
        </div>
     
   )

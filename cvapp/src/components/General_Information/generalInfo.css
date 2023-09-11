@@ -5,6 +5,7 @@
     box-shadow: 2px 2px 5px rgb(106, 105, 105);
     border-radius: 10px;
     margin-top: 10px;
+    background-color: #252A34;
 }
 
 .personaldetail{
@@ -36,7 +37,7 @@
     height: 40px;
     border: none;
     border-radius: 10px;
-    background-color: #CEDEBD;
+    background-color: whitesmoke;
 }
 .inputDesgn:hover{
     background-color: #cfe6b6;

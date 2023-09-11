@@ -5,6 +5,7 @@
    height: 85vh;
    overflow-y: scroll;
    overflow-x: hidden;
+   border-radius: 10px;
 }
 
 .cvcontainerScroll::-webkit-scrollbar{
@@ -17,22 +18,24 @@
    display: flex;
 }
 .FirstLastnameHeader{
-   font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
-   font-size: 50px;
+   font-family:'Raleway', sans-serif,'Gill Sans', 'Gill Sans MT';
+   font-size: 75px;
 }
 
 .professionHeader{
    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
-   font-size: 30px;
+   font-weight: lighter;
+   font-size: 40px;
 }
 
 .userDescription{
    margin-top: 20px;
 }
 .expriencecatagory{
-   background-color:#7C99AC;
+   background-color:#9d9898;
    padding: 20px;
    flex: 4;
+   font-weight:500;
 }
 
 .ExprienceContainer{
@@ -40,11 +43,14 @@
 }
 .exprincewrapper{
    margin-top: 20px;
+   list-style: none;
 }
 .contactscatagory{
-   background-color: #D3DEDC;
+   color: whitesmoke;
+   background-color: #252A34;
    padding: 20px;
    flex: 2;
+   font-weight:500;
 }
 
 .contactDetails{
@@ -86,8 +92,13 @@
 .SkillContainer{
    margin-top: 40px;
 }
+
+.SkillContainer>li{
+   list-style: none;
+}
 .languageContainer{
    margin-top: 40px;
+   list-style: none;
 }
 
 .recomendationContainer{

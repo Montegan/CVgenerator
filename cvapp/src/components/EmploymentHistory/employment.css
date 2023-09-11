@@ -5,6 +5,8 @@
     box-shadow: 2px 2px 5px rgb(106, 105, 105);
     border-radius: 10px;
     margin-top: 10px;
+    background-color: #252A34;
+    color: #EAEAEA;
 }
 
 .Emplomenthistory{
@@ -41,7 +43,7 @@
     height: 40px;
     border: none;
     border-radius: 10px;
-    background-color: #CEDEBD;
+    background-color:whitesmoke;
 }
 .EmploymentList:hover{
     background-color: #cfe6b6;
@@ -54,10 +56,10 @@
    border: none;
    border-radius: 8px;
    margin-top: 20px;
-   background-color: #9EB384; 
+   background-color: #FF2E63; 
 }
 
 .addempoymentbtn:hover{
     cursor: pointer;
-    background-color: #6e8f46; 
+    background-color: #c12a50; 
 }
